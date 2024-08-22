@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Policy>
+    <Name>Basic Scan Policy</Name>
+    <Description>Default scan policy for basic network vulnerability assessment.</Description>
+    <Settings>
+        <PortScan>
+            <Enable>true</Enable>
+            <PortRange>1-65535</PortRange>
+        </PortScan>
+        <Credentials>
+            <SSH>
+                <Username>admin</Username>
+                <Password>password</Password>
+            </SSH>
+            <SMB>
+                <Username>admin</Username>
+                <Password>password</Password>
+            </SMB>
+        </Credentials>
+        <Plugins>
+            <Enable>true</Enable>
+            <PluginIDList>100000,100001,100002</PluginIDList>
+        </Plugins>
+    </Settings>
+</Policy>
